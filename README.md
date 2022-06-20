@@ -1,18 +1,19 @@
 # Sumanth's Personal Blog
 
-Hello everyone! This repository contains the source code for a static blog build
-on top of Notion and Next.js, deployed on [Vercel](https://vercel.com). The
-template used for this blog is [Nobelium](https://github.com/craigary/nobelium).
+Hello everyone! This repository contains the source code for a static blog 
+build on top of Notion and Next.js, deployed on 
+[Vercel](https://vercel.com). The template used for this blog is
+[Nobelium](https://github.com/craigary/nobelium).
 
-I thank the community which took the challenge to build such an awesome
-platform. Your impact in the Open Source movement is unprecedented.
+I thank the community which took the challenge to build such an awesome platform. Your impact in the Open Source 
+movement is unprecedented.
 
 ## Technical details
 
--   **Generation**: Next.js and Incremental Static Regeneration
--   **Page render**: [react-notion-x](https://github.com/NotionX/react-notion-x)
--   **Style**: Tailwind CSS and `@tailwindcss/jit` compiler
--   **Comments**: Gitalk, Cusdis and more
+- **Generation**: Next.js and Incremental Static Regeneration
+- **Page render**: [react-notion-x](https://github.com/NotionX/react-notion-x)
+- **Style**: Tailwind CSS and `@tailwindcss/jit` compiler
+- **Comments**: Gitalk, Cusdis and more
 
 ## Special Thanks
 
