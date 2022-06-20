@@ -45,13 +45,6 @@ const Layout = ({
                 BLOG.lang
               )}
             </div>
-            {/*{frontMatter.tags && (*/}
-            {/*  <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags">*/}
-            {/*    {frontMatter.tags.map(tag => (*/}
-            {/*      <TagItem key={tag} tag={tag} />*/}
-            {/*    ))}*/}
-            {/*  </div>*/}
-            {/*)}*/}
           </nav>
         )}
         {children}
@@ -94,3 +87,13 @@ const Layout = ({
 }
 
 export default Layout
+
+// unused tags code for search functionality
+//
+// {/*{frontMatter.tags && (*/}
+// {/*  <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags">*/}
+// {/*    {frontMatter.tags.map(tag => (*/}
+// {/*      <TagItem key={tag} tag={tag} />*/}
+// {/*    ))}*/}
+// {/*  </div>*/}
+// {/*)}*/}
