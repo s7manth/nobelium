@@ -5,12 +5,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/craigary/nobelium.git"
+    "url": "https://github.com/s7manth/nobelium.git"
   },
   "author": {
-    "name": "Craig Hart",
-    "email": "i@craigary.net",
-    "url": "http://craigary.net"
+    "name": "Sumanth Yalamarty",
+    "email": "syalamarty002@gmail.com",
+    "url": "https://s7manth.vercel.app"
   },
   "scripts": {
     "dev": "next dev",
@@ -47,7 +47,7 @@
     "tailwindcss": "^2.2.19"
   },
   "bugs": {
-    "url": "https://github.com/craigary/nobelium/issues",
-    "email": "i@craigary.net"
+    "url": "https://github.com/s7manth/nobelium/issues",
+    "email": "syalamarty002@gmail.com"
   }
 }

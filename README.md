@@ -1,4 +1,4 @@
-# Sumanth Yalamarty's Personal Blog
+# Sumanth's Personal Blog
 
 Hello everyone! This repository contains the source code for a static blog 
 build on top of Notion and Next.js, deployed on 

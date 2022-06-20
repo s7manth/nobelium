@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import Container from '@/components/Container'
-import TagItem from '@/components/TagItem'
 import { NotionRenderer, Equation, Code, Collection, CollectionRow } from 'react-notion-x'
 import BLOG from '@/blog.config'
 import formatDate from '@/lib/formatDate'
@@ -26,42 +24,34 @@ const Layout = ({
       layout="blog"
       title={frontMatter.title}
       description={frontMatter.summary}
-      // date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
       fullWidth={fullWidth}
     >
-      <article>
+      <article className="divide-y divide-gray-600">
         <h1 className="font-bold text-3xl text-black dark:text-white">
           {frontMatter.title}
         </h1>
         {frontMatter.type[0] !== 'Page' && (
-          <nav className="flex mt-7 items-start text-gray-500 dark:text-gray-400">
-            <div className="flex mb-4">
+          <nav className="flex mt-7 items-start text-gray-600 dark:text-gray-400">
+            <div className="flex mb-4 py-4">
               <a href={BLOG.socialLink || '#'} className="flex">
-                <Image
-                  alt={BLOG.author}
-                  width={24}
-                  height={24}
-                  src={`https://gravatar.com/avatar/${emailHash}`}
-                  className="rounded-full"
-                />
-                <p className="ml-2 md:block">{BLOG.author}</p>
+                <p className="md:block">{BLOG.author}</p>
               </a>
-              <span className="block">&nbsp;/&nbsp;</span>
+              <span className="block">&nbsp; &nbsp; / &nbsp; &nbsp;</span>
             </div>
-            <div className="mr-2 mb-4 md:ml-0">
+            <div className="mr-2 mb-4 md:ml-0 py-4">
               {formatDate(
                 frontMatter?.date?.start_date || frontMatter.createdTime,
                 BLOG.lang
               )}
             </div>
-            {frontMatter.tags && (
-              <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags">
-                {frontMatter.tags.map(tag => (
-                  <TagItem key={tag} tag={tag} />
-                ))}
-              </div>
-            )}
+            {/*{frontMatter.tags && (*/}
+            {/*  <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags">*/}
+            {/*    {frontMatter.tags.map(tag => (*/}
+            {/*      <TagItem key={tag} tag={tag} />*/}
+            {/*    ))}*/}
+            {/*  </div>*/}
+            {/*)}*/}
           </nav>
         )}
         {children}

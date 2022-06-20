@@ -9,7 +9,9 @@ const NavBar = () => {
     { id: 0, name: locale.NAV.INDEX, to: BLOG.path || '/', show: true },
     { id: 1, name: locale.NAV.ABOUT, to: '/about', show: BLOG.showAbout },
     { id: 2, name: locale.NAV.RSS, to: '/feed', show: false },
-    { id: 3, name: locale.NAV.SEARCH, to: '/search', show: false }
+    { id: 3, name: locale.NAV.SEARCH, to: '/search', show: false },
+    { id: 4, name: locale.NAV.PROJECTS, to: '/projects', show: true },
+    { id: 5, name: locale.NAV.WORK, to: '/work', show: true }
   ]
   return (
     <div className="flex-shrink-0">
@@ -73,16 +75,15 @@ const Header = ({ navBarTitle, fullWidth }) => {
                 <svg
                   width="24"
                   height="24"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 33.95 33.95"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect
                     width="24"
                     height="24"
-                    className="fill-current text-black dark:text-white"
+                    className="fill-current text-black dark:text-white translate-x-1/2 rotate-45"
                   />
-                  <rect width="24" height="24" fill="url(#paint0_radial)" />
                   <defs>
                     <radialGradient
                       id="paint0_radial"
@@ -108,7 +109,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
               )
             : (
             <p className="ml-2 font-medium text-day dark:text-night header-name">
-              {BLOG.title},{' '}
+              {'  '}{BLOG.title}{'   '}
               <span className="font-normal">{BLOG.description}</span>
             </p>
               )}
