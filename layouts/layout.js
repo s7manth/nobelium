@@ -27,19 +27,19 @@ const Layout = ({
       type="article"
       fullWidth={fullWidth}
     >
-      <article className="divide-y divide-gray-600 dark:divide-white">
+      <article>
         <h1 className="font-bold text-3xl text-black dark:text-white">
           {frontMatter.title}
         </h1>
         {frontMatter.type[0] !== 'Page' && (
-          <nav className="flex mt-7 items-start text-gray-600 dark:text-gray-400">
-            <div className="flex mb-4 py-4">
+          <nav className="flex mt-7 items-start text-gray-400 dark:text-gray-300">
+            <div className="flex mb-4">
               <a href={BLOG.socialLink || '#'} className="flex">
                 <p className="md:block">{BLOG.author}</p>
               </a>
               <span className="block">&nbsp; &nbsp; / &nbsp; &nbsp;</span>
             </div>
-            <div className="mr-2 mb-4 md:ml-0 py-4">
+            <div className="mr-2 mb-4 md:ml-0">
               {formatDate(
                 frontMatter?.date?.start_date || frontMatter.createdTime,
                 BLOG.lang
