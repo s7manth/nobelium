@@ -3,7 +3,7 @@
 Hello everyone! This repository contains the source code for a static blog 
 build on top of Notion and Next.js, deployed on 
 [Vercel](https://vercel.com). The template used for this blog is
-[Nobellium](https://github.com/craigary/nobelium).
+[Nobelium](https://github.com/craigary/nobelium).
 
 I thank the community which took the challenge to build such an awesome platform. Your impact in the Open Source 
 movement is unprecedented.

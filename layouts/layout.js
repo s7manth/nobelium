@@ -27,7 +27,7 @@ const Layout = ({
       type="article"
       fullWidth={fullWidth}
     >
-      <article className="divide-y divide-gray-600">
+      <article className="divide-y divide-gray-600 dark:divide-white">
         <h1 className="font-bold text-3xl text-black dark:text-white">
           {frontMatter.title}
         </h1>
