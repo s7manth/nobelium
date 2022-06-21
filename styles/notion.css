@@ -41,7 +41,7 @@ svg + .notion-page-title-text {
 
 .notion-code > code {
   @apply text-gray-900;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro", ui-monospace;
 }
 
 pre[class*='language-'] {
