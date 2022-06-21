@@ -55,7 +55,14 @@
   src: url('/fonts/Lato-LightItalic.ttf') format('ttf');
 }
 
-
+@font-face {
+  font-family: 'Source Code Pro';
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Monospace';
+  src: url('/fonts/SourceCodePro-Light.ttf') format('ttf');
+}
 
 html {
   --scrollbarBG: #ffffff00;
