@@ -1,5 +1,5 @@
 const BLOG = {
-  title: 's7manth',
+  title: 'Sumanth Yalamarty',
   author: 'Sumanth Yalamarty',
   email: 'syalamarty002@gmail.com',
   link: 'https://s7manth.vercel.app',
