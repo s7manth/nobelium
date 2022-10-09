@@ -2,7 +2,7 @@ const BLOG = {
   title: 'Sumanth Yalamarty',
   author: 'Sumanth Yalamarty',
   email: 'syalamarty002@gmail.com',
-  link: 'https://s7manth.vercel.app',
+  link: 'https://s7manth.me',
   description: 'Ideation. Innovation. Transformation.',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'auto', // ['light', 'dark', 'auto'],
@@ -19,7 +19,7 @@ const BLOG = {
   ogImageGenerateURL: '', // The link to generate OG image, don't end with a slash
   socialLink: 'https://twitter.com/s7manth',
   seo: {
-    keywords: ['Blog', 'Website', 'Notion'],
+    keywords: ['Blog', 'Website', 'Sumanth', 'Yalamarty'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
@@ -27,9 +27,9 @@ const BLOG = {
   analytics: {
     provider: 'ackee', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
     ackeeConfig: {
-      tracker: 'https://ackee.s7manth.me/tracker.js', // tracker url provided by ackee
-      dataAckeeServer: 'https://ackee.s7manth.me', // don't end with a slash
-      domainId: '7601cae6-034b-4091-b666-9cf7b119f381' // e.g '0e2257a8-54d4-4847-91a1-0311ea48cc7b'
+      tracker: process.env.TRACKER_URL, // tracker url provided by ackee
+      dataAckeeServer: process.env.DATA_ACKEE_SERVER, // don't end with a slash
+      domainId: process.env.ACKEE_DOMAIN_ID // e.g '0e2257a8-54d4-4847-91a1-0311ea48cc7b'
     },
     gaConfig: {
       measurementId: '' // e.g: G-XXXXXXXXXX
