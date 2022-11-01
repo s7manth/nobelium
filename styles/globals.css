@@ -71,10 +71,12 @@ html {
 body::-webkit-scrollbar {
   width: 5px;
 }
+
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
+
 body::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
 }
