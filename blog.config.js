@@ -5,8 +5,8 @@ const BLOG = {
   link: 'https://s7manth.me',
   description: 'Ideation. Innovation. Transformation.',
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
-  appearance: 'light', // ['light', 'dark', 'auto'],
-  font: 'sans-serif', // ['sans-serif', 'serif']
+  appearance: 'auto', // ['light', 'dark', 'auto'],
+  font: ['Inter', 'sans-serif'], // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#18181B', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
