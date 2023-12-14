@@ -28,11 +28,11 @@ const Layout = ({
       fullWidth={fullWidth}
     >
       <article>
-        <h1 className="font-bold text-4xl text-black dark:text-white">
+        <h1 className="font-bold text-3xl text-black dark:text-white">
           {frontMatter.title}
         </h1>
         {frontMatter.type[0] !== 'Page' && (
-          <nav className="flex mt-7 items-start text-gray-500 dark:text-gray-300">
+          <nav className="flex mt-7 items-start text-gray-400 dark:text-gray-300">
             <div className="flex mb-4">
               <a href={BLOG.socialLink || '#'} className="flex">
                 <p className="md:block">{BLOG.author}</p>
@@ -47,11 +47,9 @@ const Layout = ({
             </div>
           </nav>
         )}
-        <div className="text-xl">
-          {children}
-        </div>
+        {children}
         {blockMap && (
-          <div className="-mt-4 text-xl">
+          <div className="-mt-4">
             <NotionRenderer
               recordMap={blockMap}
               components={{
